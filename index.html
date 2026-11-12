@@ -1,112 +1,11 @@
 <!doctype html>
 <html lang="cs">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="MaDacrame – kreativní dílna propojující 3D modelování, zakázkový 3D tisk, technickou výrobu a ruční tvorbu.">
-  <meta name="theme-color" content="#17191b">
-  <title>MaDacrame | Kreativní a technická dílna</title>
-  <style>
-    :root{--bg:#17191b;--panel:#202326;--panel2:#272b2e;--text:#f4f2ed;--muted:#aeb3b5;--line:#3b4145;--orange:#ff762e;--orange2:#ff9a58;--max:1160px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,Arial,Helvetica,sans-serif}
-    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 42px));margin:auto}
-    .topline{height:4px;background:linear-gradient(90deg,var(--orange),#ffb36d 55%,transparent)}
-    header{position:sticky;top:0;z-index:10;background:rgba(23,25,27,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
-    nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}
-    .brand{font-weight:900;letter-spacing:.09em;font-size:1.35rem}.brand span{color:var(--orange)}
-    .navlinks{display:flex;gap:25px;align-items:center;font-size:.88rem;color:#d4d7d8}.navlinks a:hover{color:var(--orange)}
-    .navcta,.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--orange);color:#17191b;padding:12px 19px;font-weight:800;border-radius:3px;transition:.2s}
-    .navcta:hover,.btn:hover{background:var(--orange2);transform:translateY(-2px)}
-    .hero{padding:100px 0 84px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 82% 28%,rgba(255,118,46,.17),transparent 36%),linear-gradient(135deg,#191c1e,#17191b 65%)}
-    .hero:after{content:"";position:absolute;right:-110px;top:50px;width:470px;height:470px;border:1px solid rgba(255,118,46,.22);transform:rotate(35deg);pointer-events:none}
-    .eyebrow{color:var(--orange);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;font-weight:800}
-    h1{font-size:clamp(2.7rem,6.5vw,5.7rem);line-height:1.02;letter-spacing:-.055em;max-width:850px;margin:20px 0}
-    h1 em{font-style:normal;color:var(--orange)}.lead{max-width:650px;color:#c0c5c7;font-size:1.15rem;margin:0 0 30px}
-    .hero-actions{display:flex;gap:13px;flex-wrap:wrap}.btn.secondary{background:transparent;color:var(--text);border:1px solid #62686b}.btn.secondary:hover{border-color:var(--orange);color:var(--orange)}
-    .hero-note{margin-top:58px;padding-top:20px;border-top:1px solid var(--line);display:flex;gap:35px;flex-wrap:wrap;color:var(--muted);font-size:.85rem}
-    .hero-note strong{color:var(--text);display:block;font-size:1.05rem}
-    section{padding:82px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}
-    h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;letter-spacing:-.04em;margin:10px 0}
-    .section-head p{max-width:480px;color:var(--muted);margin:0}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
-    .card{background:var(--panel);border:1px solid var(--line);padding:25px;min-height:245px;position:relative;overflow:hidden}
-    .card:before{content:"";position:absolute;left:0;top:0;width:3px;height:0;background:var(--orange);transition:.25s}.card:hover:before{height:100%}
-    .num{color:var(--orange);font-weight:900;font-size:.8rem;letter-spacing:.1em}.card h3{font-size:1.3rem;margin:20px 0 8px}.card p{color:var(--muted);margin:0;font-size:.94rem}
-    .darkband{background:#111315;border-top:1px solid #292e31;border-bottom:1px solid #292e31}
-    .about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-    .visual{min-height:350px;background:linear-gradient(145deg,#30363a,#1e2225);border:1px solid #454c50;display:grid;place-items:center;position:relative;overflow:hidden}
-    .visual:before,.visual:after{content:"";position:absolute;border:1px solid rgba(255,118,46,.4);width:70%;height:70%;transform:rotate(35deg)}
-    .visual:after{width:48%;height:48%;transform:rotate(-25deg)}
-    .visual-label{position:relative;z-index:1;text-align:center;font-weight:900;letter-spacing:.16em;color:#f7f3ed;font-size:1.1rem}.visual-label span{display:block;color:var(--orange);font-size:.75rem;margin-top:8px}
-    .about p{color:var(--muted)}.ticks{list-style:none;padding:0;margin:24px 0}.ticks li{padding:7px 0 7px 24px;position:relative}.ticks li:before{content:"+";position:absolute;left:0;color:var(--orange);font-weight:900}
-    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.slot{min-height:230px;background:linear-gradient(145deg,#30363a,#202427);border:1px dashed #596166;display:flex;align-items:end;padding:18px;position:relative}.slot:before{content:"FOTOGRAFIE";position:absolute;top:18px;left:18px;font-size:.68rem;letter-spacing:.16em;color:#8d969a}.slot strong{font-size:1.02rem}.slot small{display:block;color:var(--muted);font-size:.8rem}
-    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{border-top:2px solid var(--orange);padding-top:16px}.step b{font-size:1.8rem;color:var(--orange)}.step h3{margin:8px 0}.step p{color:var(--muted);font-size:.9rem}
-    .contact{background:linear-gradient(120deg,#24292c,#17191b);border:1px solid #42494d;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:25px}
-    .contact p{color:var(--muted);margin-bottom:0}.contact-links{display:flex;flex-direction:column;gap:9px;white-space:nowrap}.contact-links a{color:var(--orange);font-weight:800}
-    footer{padding:30px 0;color:#858d91;font-size:.8rem;border-top:1px solid var(--line)}footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-    @media(max-width:800px){.navlinks{display:none}.grid,.gallery{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr;gap:30px}.process{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head p{margin-top:15px}.contact{display:block}.contact-links{margin-top:25px}}
-    @media(max-width:520px){.wrap{width:min(var(--max),calc(100% - 30px))}.hero{padding:75px 0 60px}.grid,.gallery,.process{grid-template-columns:1fr}.card{min-height:unset}.contact{padding:27px}.hero-note{gap:18px}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101214">
+<title>MaDacrame — kreativní a technická dílna</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-<div class="topline"></div>
-<header><div class="wrap"><nav>
-  <a class="brand" href="#top">MA<span>DACRAME</span></a>
-  <div class="navlinks"><a href="#sluzby">Co umíme</a><a href="#dilna">O dílně</a><a href="#realizace">Realizace</a><a href="#kontakt">Kontakt</a></div>
-  <a class="navcta" href="#kontakt">Nezávazná poptávka</a>
-</nav></div></header>
-<main id="top">
-  <div class="hero"><div class="wrap">
-    <div class="eyebrow">Kreativní & technická dílna</div>
-    <h1>Od prvního nápadu<br>k <em>hotové věci.</em></h1>
-    <p class="lead">MaDacrame propojuje technické myšlení, digitální výrobu a poctivou ruční tvorbu. Navrhujeme, modelujeme a vyrábíme — podle nápadu, zadání i konkrétní potřeby.</p>
-    <div class="hero-actions"><a class="btn" href="#kontakt">Poptat zakázku</a><a class="btn secondary" href="#sluzby">Prohlédnout možnosti</a></div>
-    <div class="hero-note"><div><strong>3D modelování</strong>Od návrhu po vlastní model</div><div><strong>Digitální výroba</strong>FDM a resinový tisk</div><div><strong>Ruční tvorba</strong>Macramé a originální výrobky</div></div>
-  </div></div>
-  <section id="sluzby"><div class="wrap">
-    <div class="section-head"><div><div class="eyebrow">Co děláme</div><h2>Různé technologie.<br>Jeden cíl.</h2></div><p>Každá zakázka začíná nápadem. Společně najdeme vhodný postup, materiál i podobu výsledku.</p></div>
-    <div class="grid">
-      <article class="card"><div class="num">01 / NÁVRH</div><h3>3D modelování</h3><p>Zakázkové 3D modely, technické díly, konstrukční návrhy a převod podkladů do digitální podoby.</p></article>
-      <article class="card"><div class="num">02 / VÝROBA</div><h3>FDM 3D tisk</h3><p>Prototypy, funkční součásti, náhradní díly i originální výrobky podle konkrétního zadání.</p></article>
-      <article class="card"><div class="num">03 / DETAIL</div><h3>Resinový tisk</h3><p>Detailní tisk pro modely a drobné výrobky, kde záleží na jemnosti povrchu a přesnosti detailů.</p></article>
-      <article class="card"><div class="num">04 / PERSONALIZACE</div><h3>Laserové práce</h3><p>Možnosti gravírování a zpracování materiálů podle vhodnosti konkrétního projektu.</p></article>
-      <article class="card"><div class="num">05 / RUČNÍ PRÁCE</div><h3>Macramé & micromacramé</h3><p>Ručně tvořené dekorace a šperky, včetně práce s minerály a osobitými kombinacemi materiálů.</p></article>
-      <article class="card"><div class="num">06 / NA MÍRU</div><h3>Zakázková realizace</h3><p>Máte nápad, podklady nebo jen představu? Probereme možnosti a navrhneme další postup.</p></article>
-    </div>
-  </div></section>
-  <section class="darkband" id="dilna"><div class="wrap about">
-    <div class="visual"><div class="visual-label">MA<span>DACRAME WORKSHOP</span></div></div>
-    <div><div class="eyebrow">O naší dílně</div><h2>Tvoření bez<br>jedné škatulky.</h2>
-      <p>MaDacrame je prostor, kde se potkává technika s kreativitou. Vedle digitálního návrhu a moderních výrobních technologií má své místo i trpělivá ruční práce.</p>
-      <p>Nechceme nabízet univerzální řešení za každou cenu. Zajímá nás, co potřebujete vytvořit — a jak se k tomu dostat co nejlépe.</p>
-      <ul class="ticks"><li>Individuální přístup ke každému zadání</li><li>Návrh i výroba na jednom místě</li><li>Malé série i jednotlivé kusy</li></ul>
-    </div>
-  </div></section>
-  <section id="realizace"><div class="wrap">
-    <div class="section-head"><div><div class="eyebrow">Vybraná práce</div><h2>Realizace</h2></div><p>Tato galerie čeká na fotografie skutečných projektů MaDacrame. Doplníme nejlepší ukázky, stručný popis zadání a výsledek.</p></div>
-    <div class="gallery">
-      <div class="slot"><div><strong>Technické modelování</strong><small>Vložíme fotografii vlastního modelu</small></div></div>
-      <div class="slot"><div><strong>FDM tisk</strong><small>Vložíme fotografii hotového výtisku</small></div></div>
-      <div class="slot"><div><strong>Resinový tisk</strong><small>Vložíme detailní ukázku</small></div></div>
-      <div class="slot"><div><strong>Laserové zpracování</strong><small>Vložíme ukázku gravírování</small></div></div>
-      <div class="slot"><div><strong>Macramé</strong><small>Vložíme ruční tvorbu</small></div></div>
-      <div class="slot"><div><strong>Zakázka na míru</strong><small>Vložíme příběh konkrétní realizace</small></div></div>
-    </div>
-  </div></section>
-  <section class="darkband"><div class="wrap">
-    <div class="eyebrow">Jak to probíhá</div><h2>Od zadání k výsledku.</h2>
-    <div class="process">
-      <div class="step"><b>01</b><h3>Ozvete se</h3><p>Popíšete nápad, účel nebo problém, který chcete vyřešit.</p></div>
-      <div class="step"><b>02</b><h3>Navrhneme řešení</h3><p>Probereme podklady, materiály, detaily a možnosti realizace.</p></div>
-      <div class="step"><b>03</b><h3>Připravíme výrobu</h3><p>Podle zakázky vznikne model, prototyp nebo plán ruční tvorby.</p></div>
-      <div class="step"><b>04</b><h3>Předáme výsledek</h3><p>Dokončený výrobek si společně odsouhlasíme a domluvíme předání.</p></div>
-    </div>
-  </div></section>
-  <section id="kontakt"><div class="wrap contact">
-    <div><div class="eyebrow">Máte nápad?</div><h2>Pojďme ho vytvořit.</h2><p>Napište nám, co potřebujete. Probereme možnosti a připravíme nezávaznou nabídku.</p></div>
-    <div class="contact-links"><a href="mailto:madacrame@email.cz">madacrame@email.cz</a><a href="tel:+420775411422">+420 775 411 422</a><a href="https://www.instagram.com/madacrame/" target="_blank" rel="noopener">Instagram @madacrame ↗</a></div>
-  </div></section>
-</main>
-<footer><div class="wrap"><span>© <span id="year"></span> MaDacrame</span><span>Kreativní & technická dílna</span></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body></html>
+<body data-page="home"><div id="app"><div class="wrap not-found"><p class="eyebrow">MADACRAME</p><h1>Načítáme obsah…</h1></div></div><script src="assets/js/site.js" defer></script></body>
+</html>

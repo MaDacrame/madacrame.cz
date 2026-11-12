@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Ukázka technického modelování",
+    "category": "3D modelování",
+    "description": "Sem doplníme skutečný projekt, podklady, postup a výsledný model.",
+    "image": "assets/visuals/3d-modelovani.svg",
+    "visible": true
+  },
+  {
+    "title": "Ukázka zakázkového 3D tisku",
+    "category": "3D tisk",
+    "description": "Sem doplníme fotografie skutečného tisku a hotového výrobku.",
+    "image": "assets/visuals/3d-tisk.svg",
+    "visible": true
+  },
+  {
+    "title": "Ukázka ruční tvorby",
+    "category": "Macramé",
+    "description": "Sem doplníme fotografie skutečných výrobků a jejich detailů.",
+    "image": "assets/visuals/macrame.svg",
+    "visible": true
+  }
+]
