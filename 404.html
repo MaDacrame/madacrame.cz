@@ -1,4 +1,14 @@
 <!doctype html>
-<html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Stránka nenalezena — MaDacrame</title>
-<style>body{margin:0;background:#101214;color:#f4f1eb;font-family:Manrope,Arial,sans-serif;display:grid;place-items:center;min-height:100vh;text-align:center;padding:20px}a{color:#f28a32}h1{font-size:3rem;letter-spacing:-.05em;margin:.2em 0}p.e{font:.72rem monospace;letter-spacing:.11em;color:#f28a32}</style></head>
-<body><div><p class="e">404 · STRÁNKA NENALEZENA</p><h1>Tudy cesta nevede.</h1><p><a href="/">Zpět na úvodní stránku MaDacrame</a></p></div></body></html>
+<html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><meta name="theme-color" content="#101214"><title>Stránka nenalezena — MaDacrame</title>
+<style>
+:root{--o:#f28a32}*{box-sizing:border-box}
+body{margin:0;background:#101214;color:#f4f1eb;font-family:Manrope,"Segoe UI",Arial,sans-serif;min-height:100vh;display:grid;place-items:center;text-align:center;padding:24px;overflow:hidden;position:relative}
+body:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(ellipse 60% 60% at 50% 45%,#000,transparent 75%);mask-image:radial-gradient(ellipse 60% 60% at 50% 45%,#000,transparent 75%)}
+main{position:relative;animation:in .8s cubic-bezier(.2,.7,.2,1) both}@keyframes in{from{opacity:0;transform:translateY(20px)}}
+.n{font-size:clamp(7rem,28vw,17rem);line-height:.9;font-weight:800;letter-spacing:-.08em;color:transparent;-webkit-text-stroke:1.5px rgba(242,138,50,.6);animation:f 5s ease-in-out infinite alternate}@keyframes f{to{transform:translateY(-10px)}}
+.e{font:500 .72rem "DM Mono",ui-monospace,monospace;letter-spacing:.14em;color:var(--o);text-transform:uppercase}
+h1{font-size:clamp(2rem,5vw,3.2rem);letter-spacing:-.05em;margin:.2em 0}p{color:#a8afb2;margin:0 0 26px}
+a{display:inline-block;background:var(--o);color:#151719;padding:14px 20px;border-radius:4px;font:500 .74rem "DM Mono",ui-monospace,monospace;letter-spacing:.11em;text-transform:uppercase;text-decoration:none;transition:.25s}a:hover{transform:translateY(-2px);box-shadow:0 10px 30px -8px rgba(242,138,50,.55)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style></head>
+<body><main><div class="n" aria-hidden="true">404</div><p class="e">Stránka nenalezena</p><h1>Tudy cesta nevede.</h1><p>Stránka, kterou hledáte, neexistuje nebo byla přesunuta.</p><a href="/">Zpět na úvod ↗</a></main></body></html>

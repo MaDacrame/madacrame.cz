@@ -83,7 +83,7 @@ Obrázky `assets/visuals/*.svg` jsou zástupná grafika a web je označuje „Il
 
 ## 11. Omezení a poznámky
 - Stránky se vykreslují JavaScriptem z JSON → náhledy při sdílení na Facebooku nebudou mít obrázek a titulek konkrétního projektu.
-- Písma Manrope/DM Mono se načítají z Google Fonts; pro plně nezávislý provoz je lze stáhnout na NAS a upravit `@import` ve `style.css`.
+- Písma Manrope a DM Mono jsou hostovaná lokálně v `assets/fonts/` (licence SIL OFL), web nevolá žádné externí služby.
 - Při ruční úpravě `content/*.json` mimo administraci se změny přepíšou: hlavní data jsou v `madacrame-private/data/`.
 - Skrytá položka není vůbec publikována do `content/` (nelze ji najít přímým odkazem).
 
