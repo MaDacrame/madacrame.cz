@@ -1,94 +1,124 @@
 [
-  {
-    "id": "macrame",
-    "title": "Macramé",
-    "kicker": "RUČNÍ TVORBA",
-    "description": "Náušnice, dekorace a doplňky tvořené s citem pro detail.",
-    "intro": "Originální macramé tvorba, ve které se potkává cit pro materiál, barvy a detail. Každý kus vzniká ručně a má svůj vlastní charakter.",
-    "image": "assets/visuals/macrame.svg",
-    "owner": "Markéta",
-    "visible": true,
-    "features": [
-      "Macramé náušnice a šperky",
-      "Bytové dekorace",
-      "Doplňky a originální dárky"
-    ]
-  },
-  {
-    "id": "mikromacrame",
-    "title": "Mikromacramé & minerály",
-    "kicker": "DETAILNÍ ŘEMESLO",
-    "description": "Jemná ruční práce, minerály a originální šperky.",
-    "intro": "Jemné uzlování v malém měřítku, minerály a pečlivě volené kombinace materiálů. Prostor pro drobné detaily i výrazné osobité šperky.",
-    "image": "assets/visuals/mikromacrame.svg",
-    "owner": "Dana",
-    "visible": true,
-    "features": [
-      "Mikromacramé šperky",
-      "Minerály a přírodní kameny",
-      "Originální ruční kombinace"
-    ]
-  },
-  {
-    "id": "3d-tisk",
-    "title": "3D tisk",
-    "kicker": "DIGITÁLNÍ VÝROBA",
-    "description": "FDM a resin tisk od funkčních dílů po detailní modely.",
-    "intro": "Zakázkový 3D tisk pro nápady, prototypy, náhradní díly i dekorativní objekty. Pracujeme s FDM i resin technologií a volíme postup podle účelu a požadovaného detailu.",
-    "image": "assets/visuals/3d-tisk.svg",
-    "owner": "Technická dílna",
-    "visible": true,
-    "features": [
-      "FDM tisk",
-      "Resin tisk",
-      "Prototypy a funkční díly",
-      "Dekorativní a sběratelské modely"
-    ]
-  },
-  {
-    "id": "3d-modelovani",
-    "title": "3D modelování",
-    "kicker": "NÁVRH & KONSTRUKCE",
-    "description": "Od podkladů a představ k promyšlenému digitálnímu modelu.",
-    "intro": "Technické modelování podle výkresů, rozměrů, fotografií nebo zadání. Důraz klademe na účel, geometrii, vyrobitelnost a ověření modelu v praxi.",
-    "image": "assets/visuals/3d-modelovani.svg",
-    "owner": "Technická dílna",
-    "visible": true,
-    "features": [
-      "Modelování podle podkladů",
-      "Rekonstrukce dílů",
-      "Příprava modelů pro tisk",
-      "Prototypování a ověřování"
-    ]
-  },
-  {
-    "id": "laser",
-    "title": "Laserové zpracování",
-    "kicker": "PŘESNOST & DETAIL",
-    "description": "Gravírování a kreativní práce s materiálem podle možností technologie.",
-    "intro": "Laserové zpracování pro označení, dekorativní motivy a individuální projekty. Konkrétní možnosti vždy posuzujeme podle materiálu, rozměru a požadovaného výsledku.",
-    "image": "assets/visuals/laser.svg",
-    "owner": "Technická dílna",
-    "visible": true,
-    "features": [
-      "Gravírování",
-      "Personalizace předmětů",
-      "Zakázkové motivy a prototypy"
-    ]
-  },
-  {
-    "id": "specialni-projekty",
-    "title": "Speciální projekty",
-    "kicker": "INDIVIDUÁLNÍ ŘEŠENÍ",
-    "description": "Netradiční zadání, kombinace technologií a hledání vlastního řešení.",
-    "intro": "Někdy se projekt nevejde do jedné kategorie. Prostor pro neobvyklé nápady, kombinaci postupů, experimenty a spolupráci na míru.",
-    "image": "assets/visuals/specialni.svg",
-    "owner": "MaDacrame",
-    "visible": true,
-    "features": [
-      "Individuální zakázky",
-      "Kombinace technologií a řemesel",
-      "Konzultace proveditelnosti"
-    ]
-  }
+    {
+        "id": "macrame",
+        "title": "Macramé",
+        "kicker": "RUČNÍ TVORBA",
+        "description": "Náušnice, dekorace a doplňky tvořené s citem pro detail.",
+        "intro": "Originální macramé tvorba, ve které se potkává cit pro materiál, barvy a detail. Každý kus vzniká ručně a má svůj vlastní charakter.",
+        "body": [
+            "Macramé je ruční uzlování, při kterém z jednoduchých materiálů vznikají náušnice, dekorace i užitečné doplňky. Každý kus je originál s vlastním charakterem.",
+            "Rádi probereme barvy, materiály i provedení, aby výsledek ladil s vaší představou."
+        ],
+        "image": "assets/visuals/macrame.svg",
+        "gallery": [],
+        "owner": "Markéta",
+        "visible": true,
+        "features": [
+            "Macramé náušnice a šperky",
+            "Bytové dekorace",
+            "Doplňky a originální dárky"
+        ]
+    },
+    {
+        "id": "mikromacrame",
+        "title": "Mikromacramé & minerály",
+        "kicker": "DETAILNÍ ŘEMESLO",
+        "description": "Jemná ruční práce, minerály a originální šperky.",
+        "intro": "Jemné uzlování v malém měřítku, minerály a pečlivě volené kombinace materiálů. Prostor pro drobné detaily i výrazné osobité šperky.",
+        "body": [
+            "Mikromacramé pracuje s velmi jemnými šňůrkami a drobnými uzly. Výsledkem jsou detailní šperky, často doplněné minerály a přírodními kameny.",
+            "Každá kombinace materiálů se vybírá ručně, takže i podobné kousky se mohou lišit."
+        ],
+        "image": "assets/visuals/mikromacrame.svg",
+        "gallery": [],
+        "owner": "Dana",
+        "visible": true,
+        "features": [
+            "Mikromacramé šperky",
+            "Minerály a přírodní kameny",
+            "Originální ruční kombinace"
+        ]
+    },
+    {
+        "id": "3d-tisk",
+        "title": "3D tisk",
+        "kicker": "DIGITÁLNÍ VÝROBA",
+        "description": "FDM a resin tisk od funkčních dílů po detailní modely.",
+        "intro": "Zakázkový 3D tisk pro nápady, prototypy, náhradní díly i dekorativní objekty. Pracujeme s FDM i resin technologií a volíme postup podle účelu a požadovaného detailu.",
+        "body": [
+            "Používáme FDM i resin tisk. FDM se hodí na funkční díly, přípravky a větší objekty, resin na jemné detaily a drobné modely.",
+            "Technologii a materiál volíme podle účelu dílu, požadované pevnosti a vzhledu."
+        ],
+        "image": "assets/visuals/3d-tisk.svg",
+        "gallery": [],
+        "owner": "Technická dílna",
+        "visible": true,
+        "features": [
+            "FDM tisk",
+            "Resin tisk",
+            "Prototypy a funkční díly",
+            "Dekorativní a sběratelské modely"
+        ]
+    },
+    {
+        "id": "3d-modelovani",
+        "title": "3D modelování",
+        "kicker": "NÁVRH & KONSTRUKCE",
+        "description": "Od podkladů a představ k promyšlenému digitálnímu modelu.",
+        "intro": "Technické modelování podle výkresů, rozměrů, fotografií nebo zadání. Důraz klademe na účel, geometrii, vyrobitelnost a ověření modelu v praxi.",
+        "body": [
+            "Model vzniká podle výkresů, změřených rozměrů, fotografií nebo popisu. Zajímá nás nejen tvar, ale i to, jak se díl bude vyrábět a používat.",
+            "Navržený model lze ověřit zkušebním tiskem a upravit podle praxe."
+        ],
+        "image": "assets/visuals/3d-modelovani.svg",
+        "gallery": [],
+        "owner": "Technická dílna",
+        "visible": true,
+        "features": [
+            "Modelování podle podkladů",
+            "Rekonstrukce dílů",
+            "Příprava modelů pro tisk",
+            "Prototypování a ověřování"
+        ]
+    },
+    {
+        "id": "laser",
+        "title": "Laserové zpracování",
+        "kicker": "PŘESNOST & DETAIL",
+        "description": "Gravírování a kreativní práce s materiálem podle možností technologie.",
+        "intro": "Laserové zpracování pro označení, dekorativní motivy a individuální projekty. Konkrétní možnosti vždy posuzujeme podle materiálu, rozměru a požadovaného výsledku.",
+        "body": [
+            "Laser využíváme pro gravírování, personalizaci a dekorativní motivy. Možnosti závisí na materiálu, rozměru a požadovaném výsledku.",
+            "Před zahájením práce vždy zhodnotíme, zda je zadání pro danou technologii vhodné."
+        ],
+        "image": "assets/visuals/laser.svg",
+        "gallery": [],
+        "owner": "Technická dílna",
+        "visible": true,
+        "features": [
+            "Gravírování",
+            "Personalizace předmětů",
+            "Zakázkové motivy a prototypy"
+        ]
+    },
+    {
+        "id": "specialni-projekty",
+        "title": "Speciální projekty",
+        "kicker": "INDIVIDUÁLNÍ ŘEŠENÍ",
+        "description": "Netradiční zadání, kombinace technologií a hledání vlastního řešení.",
+        "intro": "Někdy se projekt nevejde do jedné kategorie. Prostor pro neobvyklé nápady, kombinaci postupů, experimenty a spolupráci na míru.",
+        "body": [
+            "Nápady, které se nevejdou do jedné kategorie, řešíme kombinací postupů — například modelování, tisku, laseru a ruční práce dohromady.",
+            "Začít můžeme konzultací, při které společně zjistíme, co je proveditelné."
+        ],
+        "image": "assets/visuals/specialni.svg",
+        "gallery": [],
+        "owner": "MaDacrame",
+        "visible": true,
+        "features": [
+            "Individuální zakázky",
+            "Kombinace technologií a řemesel",
+            "Konzultace proveditelnosti"
+        ]
+    }
 ]

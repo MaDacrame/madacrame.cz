@@ -1,23 +1,41 @@
 [
-  {
-    "title": "Ukázka technického modelování",
-    "category": "3D modelování",
-    "description": "Sem doplníme skutečný projekt, podklady, postup a výsledný model.",
-    "image": "assets/visuals/3d-modelovani.svg",
-    "visible": true
-  },
-  {
-    "title": "Ukázka zakázkového 3D tisku",
-    "category": "3D tisk",
-    "description": "Sem doplníme fotografie skutečného tisku a hotového výrobku.",
-    "image": "assets/visuals/3d-tisk.svg",
-    "visible": true
-  },
-  {
-    "title": "Ukázka ruční tvorby",
-    "category": "Macramé",
-    "description": "Sem doplníme fotografie skutečných výrobků a jejich detailů.",
-    "image": "assets/visuals/macrame.svg",
-    "visible": true
-  }
+    {
+        "id": "ukazka-technickeho-modelovani",
+        "title": "Ukázka technického modelování",
+        "category": "3d-modelovani",
+        "description": "Sem doplníme skutečný projekt, podklady, postup a výsledný model.",
+        "image": "assets/visuals/3d-modelovani.svg",
+        "paragraphs": [
+            "Sem doplníme skutečný projekt, podklady, postup a výsledný model."
+        ],
+        "gallery": [],
+        "visible": true,
+        "placeholder": true
+    },
+    {
+        "id": "ukazka-zakazkoveho-3d-tisku",
+        "title": "Ukázka zakázkového 3D tisku",
+        "category": "3d-tisk",
+        "description": "Sem doplníme fotografie skutečného tisku a hotového výrobku.",
+        "image": "assets/visuals/3d-tisk.svg",
+        "paragraphs": [
+            "Sem doplníme fotografie skutečného tisku a hotového výrobku."
+        ],
+        "gallery": [],
+        "visible": true,
+        "placeholder": true
+    },
+    {
+        "id": "ukazka-rucni-tvorby",
+        "title": "Ukázka ruční tvorby",
+        "category": "macrame",
+        "description": "Sem doplníme fotografie skutečných výrobků a jejich detailů.",
+        "image": "assets/visuals/macrame.svg",
+        "paragraphs": [
+            "Sem doplníme fotografie skutečných výrobků a jejich detailů."
+        ],
+        "gallery": [],
+        "visible": true,
+        "placeholder": true
+    }
 ]
